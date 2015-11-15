@@ -290,6 +290,9 @@ SI("extradiv",false);
 }
 }
 }
+if(navigator.userAgent.match(/(iPod|iPhone|iPad)/)&&navigator.userAgent.match(/AppleWebKit/)){
+SS("extradiv",GI("extradiv"));
+}
 self.sideframe.SSE(Evp,viewMode);
 var uf=(viewMode=="website")?"w":((viewMode=="blog")?"B":((viewMode=="photos")?"P":null));
 if(uf){

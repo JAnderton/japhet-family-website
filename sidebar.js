@@ -324,6 +324,7 @@ var p=f[Spe];
 if(Sed){
 GE("gender_f").checked=(p.g=="f");
 GE("gender_m").checked=(p.g=="m");
+GE("gender_o").checked=(p.g=="o");
 GE("alive").checked=(p.z!="1");
 SSD("birthdom","birthmonth","birthyear",p.b);
 SSD("deathdom","deathmonth","deathyear",p.d);
@@ -548,7 +549,7 @@ v=v.replace(/^\s+|\s+$/g,"");
 if((j=="p")||(j=="l")||(j=="q")){
 var s=v.split(" ");
 for(w=0;w<s.length;w++){
-if((s[w].length)&&(s[w]!="de")&&(s[w]!="del")&&(s[w]!="von")){
+if((s[w].length)&&(s[w]!="de")&&(s[w]!="del")&&(s[w]!="la")&&(s[w]!="von")&&(s[w]!="van")&&(s[w]!="den")&&(s[w]!="der")){
 s[w]=s[w].charAt(0).toUpperCase()+s[w].substring(1);
 }
 }
@@ -981,6 +982,7 @@ var pw=(!Sed)&&SPW(Spe)&&parent.GV("familyid");
 u=u&&pw;
 if(u){
 var v=GE("uploadiframe");
+v.src="imageupload.php?f="+escape(parent.GV("familyid"))+"&p="+escape(parent.GV("personid"))+"&c="+escape(parent.GV("checksum"))+"&i="+escape(Spe)+(r?"&r="+escape(r):"");
 }else{
 if(r){
 var e=r.split(" ");

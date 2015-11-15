@@ -14,7 +14,7 @@
 	This copyright and license notice must be kept in all copies of this file.
 */
 var Fmn=["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-var Fgn={"":"","f":"Female","m":"Male"};
+var Fgn={"":"","f":"Female","m":"Male","o":"Other"};
 function FAA(a,v){
 a[a.length]=v;
 };
@@ -221,8 +221,8 @@ f[j].rf=false;
 FSR(f,i,"rf",false,false,true,true,false,false);
 f[i].rf=false;
 FSR(f,i,"rf",false,false,false,false,true,false);
-FSR(f,p.m,"rf",true,true,true,false,false,false);
-FSR(f,p.f,"rf",true,true,true,false,false,false);
+FSR(f,p.m,"rf",true,true,false,false,false,false);
+FSR(f,p.f,"rf",true,true,false,false,false,false);
 var ra=[];
 for(var j in f){
 if(!f[j].rf){

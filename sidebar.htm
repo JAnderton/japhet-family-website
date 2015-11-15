@@ -17,13 +17,13 @@
 	This copyright and license notice must be kept in all copies of this file.
 -->
 
-		<LINK REL="stylesheet" TYPE="text/css" HREF="styles.css?140605">
+		<LINK REL="stylesheet" TYPE="text/css" HREF="styles.css?150921">
 		
 		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
 		
-		<script src="common.js?140605" type="text/javascript"></script>
-		<script src="family.js?140605" type="text/javascript"></script>	
-		<script src="sidebar.js?140605" type="text/javascript"></script>
+		<script src="common.js?150921" type="text/javascript"></script>
+		<script src="family.js?150921" type="text/javascript"></script>	
+		<script src="sidebar.js?150921" type="text/javascript"></script>
 	</HEAD>
 	
 	<BODY CLASS="lbody" onLoad="PL();">
@@ -40,7 +40,7 @@
 			<DIV ID="nonrelations" STYLE="display:none; margin-top:6px;">
 			
 			<DIV ID="nonediting">
-				<IFRAME ID="uploadiframe" CLASS="simage" STYLE="display:none; margin-top:6px;" SCROLLING="no" WIDTH="200" HEIGHT="120" FRAMEBORDER="0"></IFRAME>
+				<IFRAME ID="uploadiframe" SRC="imageupload.php" CLASS="simage" STYLE="display:none; margin-top:6px;" SCROLLING="no" WIDTH="200" HEIGHT="120" FRAMEBORDER="0"></IFRAME>
 				<INPUT ID="uploadbutton" TYPE="submit" VALUE="Upload photo" CLASS="sbutton" STYLE="display:none; margin-top:6px;" onClick="SIC(); return false;">
 	
 				<INPUT ID="hideurl" TYPE="submit" VALUE="Back to family tree" CLASS="sbutton" STYLE="display:none; margin-top:6px;" onClick="parent.ESM('view'); return false;">
@@ -102,9 +102,9 @@
 						</TD>
 						<TD CLASS="sright">
 							<DIV STYLE="margin:2px 0px;">
-								<INPUT TYPE="radio" NAME="gender" ID="gender_f" onClick="SSG('f');"> Female
-								&nbsp;
-								<INPUT TYPE="radio" NAME="gender" ID="gender_m" onClick="SSG('m');"> Male
+								<INPUT TYPE="radio" NAME="gender" ID="gender_f" onClick="SSG('f');" STYLE="margin-right:4px;">Female&nbsp;
+								<INPUT TYPE="radio" NAME="gender" ID="gender_m" onClick="SSG('m');" STYLE="margin-right:4px;">Male&nbsp;
+								<INPUT TYPE="radio" NAME="gender" ID="gender_o" onClick="SSG('o');" STYLE="margin-right:4px;">Other
 							</DIV>
 						</TD>
 					</TR>

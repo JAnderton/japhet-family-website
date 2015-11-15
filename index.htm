@@ -18,7 +18,7 @@
 	This copyright and license notice must be kept in all copies of this file.
 -->
 
-		<LINK REL="stylesheet" TYPE="text/css" HREF="styles.css?140602">
+		<LINK REL="stylesheet" TYPE="text/css" HREF="styles.css?150921">
 
 		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
 
@@ -29,26 +29,27 @@
 		var hideSidebar=false;
 		var noCentering=false;
 		var defaultZoom=1.25;
-		var defaultDetail=null;
+		var defaultDetail='bds';
 		var defaultBirthName=0;
 		var defaultMiddleName=0;
 		var defaultShowPhoto=0;
 		var defaultCousins=2;
 		var defaultChildren=8;
-		var defaultParents=5;
+		var defaultParents=8;
 		var nameColors={
 			living : '#000',
 			deceased : '#777'
 		};
 		--></SCRIPT>
 
-		<script src="common.js?140602" type="text/javascript"></script>
-		<script src="family.js?140602" type="text/javascript"></script>
-		<script src="edit.js?140602" type="text/javascript"></script>
+		<script src="common.js?150921" type="text/javascript"></script>
+		<script src="family.js?150921" type="text/javascript"></script>
+		<script src="edit.js?150921" type="text/javascript"></script>
+		<script src="tree.js?150921" type="text/javascript"></script>
 	</HEAD>
 
 	<BODY STYLE="overflow:hidden;" onLoad="PL();">
-		<TABLE WIDTH="100%" HEIGHT="100%" CELLSPACING=0 CELLPADDING="0">
+		<TABLE WIDTH="100%" HEIGHT="100%" CELLSPACING=0 CELLPADDING=0>
 
 			<TR HEIGHT="8">
 				<FORM NAME="topform" ACTION="./" METHOD="POST">
@@ -56,6 +57,7 @@
 						<TABLE WIDTH="100%" HEIGHT="100%" CELLSPACING=0 CELLPADDING=0><TR VALIGN="middle">
 							<TD NOWRAP><FONT STYLE="font-size:28px;">		<SPAN ID="lfamilyname"><FONT COLOR="#7F2020">The Japhet Family</FONT></SPAN>&nbsp;<SPAN ID="lfamilyinfo" STYLE="font-size:12px;"></SPAN>
 
+		<IFRAME ID="backframe" WIDTH="1" HEIGHT="1" FRAMEBORDER="0" SCROLLING="no"></IFRAME>
 </FONT></TD>
 							<TD ALIGN="right">
 
@@ -63,32 +65,42 @@
 
 # Start of FamilyScript...
 
-iSTART	pKarun	lJaphet	qJaphet	gm	Bhttp://karun.japhet.in	whttp://karun.me	mJ7OU7	fLK2TX	r376336153 134 120	vMumbai, India
+iSTART	pKarun	lJaphet	qJaphet	gm	Bhttps://blog.karun.me	whttp://karun.me	mJ7OU7	fLK2TX	r722667996 120 120	vMumbai, India	sXT4J6
 iLK2TX	^START	gm	lJaphet	sJ7OU7	pBim	qJaphet	mGOIGT	fPVJ84	r391298127 160 106
 iJ7OU7	^START	gf	sLK2TX	lJaphet	pAgaja	qMoothad	mG9EDJ	fSOC8C	r795737767 156 120
-iN4TW6	^START	mJ7OU7	fLK2TX	lJaphet	qJaphet	pBrian Bim	gm	sRD20O	vMumbai, India	r806884914 100 120
+iN4TW6	^START	mJ7OU7	fLK2TX	lJaphet	qJaphet	pBrian Bim	gm	sRD20O	vMumbai, India	r806884914 100 120	EJumeirah
 iRD20O	^N4TW6	gf	sN4TW6	lJaphet	pJeana Gultiano	qGultiano	vButuan, Phillipines	mGNU04	fO3YUD	r945493734 83 120
 iPVJ84	^LK2TX	gm	lJaphet	sGOIGT	z1	pFredric
 iGOIGT	^LK2TX	gf	sPVJ84	lJaphet	pPrafulla	qRao	z1
-iCSXFH	^LK2TX	mGOIGT	fPVJ84	lHonawar	qJaphet	pMamta	gf	b19690130	sBG03D
+iCSXFH	^LK2TX	mGOIGT	fPVJ84	lHonawar	qJaphet	pMamta	gf	sBG03D
 iSOC8C	^J7OU7	gm	lMoothad	sG9EDJ	pDamodar	qMoothad
-iG9EDJ	^J7OU7	gf	sSOC8C	lMoothad	pBharatikutti	qMoos
+iG9EDJ	^J7OU7	gf	sSOC8C	lMoothad	pBharatikutti	qMoos	z1
 iNZ5R0	^J7OU7	mG9EDJ	fSOC8C	lSharma	qMoothad	pAjitha	gf	sH4LAZ
-iYCPTO	^J7OU7	mG9EDJ	fSOC8C	lMoothad	qMoothad	pSatish	z1	gm	d19990509	b19621222	sY75PD
+iYCPTO	^J7OU7	mG9EDJ	fSOC8C	lMoothad	qMoothad	pSatish	z1	gm	sY75PD
 iBG03D	^CSXFH	gm	sCSXFH	lHonawar	pMilin
 iH4LAZ	^NZ5R0	gm	sNZ5R0	lSharma	pKPD
-iO3YUD	^RD20O	gm	lGultiano	sGNU04	pIsidro	qGultiano	b19440515
-iGNU04	^RD20O	gf	sO3YUD	lGultiano	pNellie	qCemine	b19400503	r277675711 57 120
-iOHIBP	^RD20O	mGNU04	fO3YUD	lGultiano	qGultiano	pJunil	gm	b19740409
-iVHS9M	^OHIBP	mGNU04	fO3YUD	lRoa	qGultiano	pJhoan	gf	b19760917	r355946899 90 120
-iVBDRY	^NZ5R0	mNZ5R0	fH4LAZ	lSharma	qSharma	pArun	gm
-iLBZFV	^NZ5R0	mNZ5R0	fH4LAZ	lSharma	qSharma	pAshwin	gm	b19840426
+iO3YUD	^RD20O	gm	lGultiano	sGNU04	pIsidro	qGultiano	r137419821 122 120	z1
+iGNU04	^RD20O	gf	sO3YUD	lGultiano	pNellie	qCemine	r277675711 57 120
+iOHIBP	^RD20O	mGNU04	fO3YUD	lGultiano	qGultiano	pJunil	gm
+iVHS9M	^OHIBP	mGNU04	fO3YUD	lRoa	qGultiano	pJhoan	gf	r355946899 90 120
+iVBDRY	^NZ5R0	mNZ5R0	fH4LAZ	lSharma	qSharma	pArun	gm	sNXWXO
+iLBZFV	^NZ5R0	mNZ5R0	fH4LAZ	lSharma	qSharma	pAshwin	gm
 iY75PD	^YCPTO	gf	sYCPTO	lSatish	pMaya
-iAVA57	^YCPTO	mY75PD	fYCPTO	lSatish	pAbhay	qSatish	gm	b19880528
-iTMFML	^AVA57	mY75PD	fYCPTO	lSatish	qSatish	pAkhil	gm	b19900201
-pJ7OU7 LK2TX	gm	m19810502	wMumbai, India
-pN4TW6 RD20O	gm	m20140327	wDubai, UAE
+iAVA57	^YCPTO	mY75PD	fYCPTO	lSatish	pAbhay	qSatish	gm
+iTMFML	^AVA57	mY75PD	fYCPTO	lSatish	qSatish	pAkhil	gm
+iUT67Z	^N4TW6	mRD20O	fN4TW6	lJaphet	qJaphet	pLuca Alexander Gultiano	gm	vDubai	r760818676 90 120
+iXT4J6	^START	gf	sSTART	lJaphet	pMansi	qVartak	r800428877 120 120	mXINOQ	fX6QCC
+iIEY7F	^RD20O	mRD20O	lMadelo	qMadelo	pEhsher Joy	gf	r805745615 90 120
+iNXWXO	^VBDRY	gf	sVBDRY	lSharma	pSreeja
+iY4GLS	^VBDRY	mNXWXO	fVBDRY	lSharma	qSharma	pAnagha	gf
+iYR148	^Y4GLS	mNXWXO	fVBDRY	lSharma	qSharma	pAryan	gm
+iX6QCC	^XT4J6	gm	sXINOQ	pVivek Vartak	r474593662 120 120	qVartak
+iXINOQ	^XT4J6	gf	sX6QCC	lVartak	pMeena	r828734936 118 120
+pSTART XT4J6	gm	wMumbai, India
+pJ7OU7 LK2TX	gm	wMumbai, India
+pN4TW6 RD20O	gm	wDubai, UAE
 pG9EDJ SOC8C	gm
+pX6QCC XINOQ	gm
 
 # ...end of FamilyScript
 
@@ -128,9 +140,9 @@ pG9EDJ SOC8C	gm
 
 			<DIV CLASS="fullsize" STYLE="position:relative;">
 
-				<DIV ID="treediv" CLASS="dright" STYLE="top:0px; height:100%; overflow:hidden;"><DIV ID="treemargin" CLASS="marginon"><IFRAME NAME="treeframe" ID="treeframe" SRC="tree.htm?140602" CLASS="fullsize" FRAMEBORDER="0" SCROLLING="no"></IFRAME></DIV></DIV>
+				<DIV ID="treediv" CLASS="dright" STYLE="top:0px; height:100%; overflow:hidden;"><DIV ID="treemargin" CLASS="marginon"><IFRAME NAME="treeframe" ID="treeframe" SRC="tree.htm?150921" CLASS="fullsize" FRAMEBORDER="0" SCROLLING="no"></IFRAME></DIV></DIV>
 
-				<DIV ID="navdiv" CLASS="dright" STYLE="bottom:0px; height:64px; "><DIV ID="navmargin" CLASS="marginon"><IFRAME NAME="navframe" SRC="navigation.htm?140602" CLASS="fullsize" FRAMEBORDER="0" SCROLLING="no"></IFRAME></DIV></DIV>
+				<DIV ID="navdiv" CLASS="dright" STYLE="bottom:0px; height:64px; "><DIV ID="navmargin" CLASS="marginon"><IFRAME NAME="navframe" SRC="navigation.htm?150921" CLASS="fullsize" FRAMEBORDER="0" SCROLLING="no"></IFRAME></DIV></DIV>
 
 				<DIV ID="keydiv" CLASS="dright rbody" STYLE="bottom:64px; display:none; border-top:solid #666666 1px; padding:24px 0px 32px 0px; text-align:center;"><DIV ID="keymargin" CLASS="marginon"><DIV STYLE="font-size:14px; font-weight:bold; margin-bottom:24px;">Key to family tree diagram:</DIV><DIV STYLE="position:relative; margin:0 auto;" ID="keycontent"></DIV></DIV></DIV>
 
@@ -140,7 +152,7 @@ pG9EDJ SOC8C	gm
 
 				</CENTER></DIV></DIV>
 
-				<DIV ID="leftdiv" CLASS="dleft" ><IFRAME NAME="sideframe" SRC="sidebar.htm?140602" CLASS="fullsize" FRAMEBORDER="0" SCROLLING="auto"></IFRAME></DIV>
+				<DIV ID="leftdiv" CLASS="dleft" STYLE=""><IFRAME NAME="sideframe" SRC="sidebar.htm?150921" CLASS="fullsize" FRAMEBORDER="0" SCROLLING="auto"></IFRAME></DIV>
 
 				<DIV ID="extradiv" CLASS="dleft lbody" STYLE="visibility:hidden;"><IFRAME ID="extraframe" CLASS="fullsize" FRAMEBORDER="0" SCROLLING="auto"></IFRAME></DIV>
 
@@ -150,14 +162,13 @@ pG9EDJ SOC8C	gm
 
 			<TR HEIGHT="8">
 				<TD STYLE="border-top:solid #666666 1px; padding:8px;" VALIGN="middle">
-					<DIV STYLE="float:left;">
-						Website maintained by <a href="http://karun.me" target="_blank">Karun Japhet</a>.
-					</DIV>
+					<DIV STYLE="float:left;">Website maintained by <a href="https://karun.me" target="_blank">Karun Japhet</a>.</DIV>
 					<DIV STYLE="float:right;">
-						<A HREF="http://www.familyecho.com/" TITLE="Family Echo - Free Online Family Tree Maker">Family Echo</A> &copy; Familiality 2014 - All rights reserved
-					</DIV>
+<A HREF="http://www.familyecho.com/" TITLE="Family Echo - Free Online Family Tree Maker">Family Echo</A> &copy; Familiality 2015 - All rights reserved					</DIV>
 				</TD>
 			</TR>
 		</TABLE>
+
 	</BODY>
+
 </HTML>
