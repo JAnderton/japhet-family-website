@@ -1,0 +1,10 @@
+{
+  "name": "japhet.in",
+  "version": "1.0.0",
+  "description": "This file exists because travis has to test projects..",
+  "author": "Karun Japhet",
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "echo \"no-op. done.\""
+  }
+}
