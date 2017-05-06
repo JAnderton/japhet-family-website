@@ -1,7 +1,7 @@
 Japhet Family Website
 =====================
 
-[![Build Status](https://snap-ci.com/JAnderton/japhet-family-website/branch/master/build_image)](https://snap-ci.com/JAnderton/japhet-family-website/branch/master)
+[![Build Status](https://travis-ci.org/JAnderton/japhet-family-website.svg?branch=master)](https://travis-ci.org/JAnderton/japhet-family-website)
 
 Hosts the source code for the Japhet Family Website at [japhet.in](https://japhet.in).
 
